@@ -1,0 +1,20 @@
+<App Theme="Basic" Background="#eeeeeeff">
+ 
+<Panel>
+    <Style>
+        <Panel>
+            <EnteringAnimation>
+                <Move X="-1" RelativeTo="ParentSize"/>
+            </EnteringAnimation>
+            <ExitingAnimation>
+                <Move X="1" RelativeTo="ParentSize" Duration="0.5"/>
+            </ExitingAnimation>
+        </Panel>
+    </Style>
+    <LinearNavigation Easing="CircularOut" />
+    <SwipeNavigate SwipeDirection="Left"/>
+    <Panel Background="Blue"/>
+    <Panel Background="Red"/>
+</Panel>
+</App>
+
